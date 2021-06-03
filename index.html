@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" >
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div id="main">
+        <h2>Example of Add New Row button, removed action label, and only some columns are editable</h2>
+        <button id="new-row-btn" onclick="create()">New Row</button>
+          <table>
+              <!-- Tablehead -->
+            <thead>                
+                <tr>
+                  <th>#</th>
+                  <th>First</th>
+                  <th>Last</th>
+                  <th>Handle</th>
+                  <th><div></div></th>
+                </tr>
+            </thead>
+            <!-- Table body -->
+            <tbody id="myTable">                
+                <tr>
+                  <th>1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                  <td class="icon">
+                    <i class="fas fa-edit icons"></i>
+                    <i class="fas fa-trash icons" onclick="deleteRow(this)"></i>
+                    <!-- <td class="editable">
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-times-circle"></i>
+                      </td> -->
+                  </td>
+                </tr>
+                <tr>
+                  <th>2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                  <td class="icon">
+                    <i class="fas fa-edit icons"></i>
+                    <i class="fas fa-trash icons" onclick="deleteRow(this)"></i>
+                  </td>
+<!--                   
+                    <td class="editable">
+                      <i class="fas fa-check-circle"></i>
+                      <i class="fas fa-times-circle"></i>
+                    </td> -->
+
+                </tr>
+                <tr>
+                  <th>3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                  <td class="icon">
+                    <i class="fas fa-edit icons"></i>
+                    <i class="fas fa-trash icons" onclick="deleteRow(this)"></i>
+                  </td>
+                    <!-- <td class="editable">
+                      <i class="fas fa-check-circle"></i>
+                      <i class="fas fa-times-circle"></i>
+                    </td> -->
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
